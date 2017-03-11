@@ -4,6 +4,7 @@
   "description": "My personal home page",
   "main": "index.js",
   "scripts": {
+    "start":"nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/impersin/myHome/issues"
   },
-  "homepage": "https://github.com/impersin/myHome#readme"
+  "homepage": "https://github.com/impersin/myHome#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7"
+  }
 }
