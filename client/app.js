@@ -1,6 +1,8 @@
 const app = angular.module('myApp', [
   'ngRoute',
-  'myApp.home'
+  'myApp.home',
+  'myApp.portfolio',
+  'myApp.thegauntlet'
 ]);
 
 app.config(($routeProvider) => {
@@ -9,8 +11,9 @@ app.config(($routeProvider) => {
     templateUrl: 'views/home.html',
     controller: 'homeController'
   })
-  .when('/portfolio', {
-    templateUrl: 'views/portfolio.html'
+  .when('/thegauntlet', {
+    templateUrl: 'views/portfolio.html',
+    controller: 'thegauntletController'
   })
   .otherwise({redirectTo: '/'});
 });
