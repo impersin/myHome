@@ -6,19 +6,17 @@
         <ul class="nav navbar-nav">
           <li><a class="menu" href="#">Home</a></li>
           <li class="dropdown">
-              <a class="menu dropdown-toggle" data-toggle="dropdown" href="/#!/">Portfolio</a>
+              <a class="menu dropdown-toggle" data-toggle="dropdown" href="/#!/{{portfolio.path}}">Portfolio</a>
                 <ul class="dropdown-menu">
                   <li><a href="/#!/thegauntlet">Thegauntlet</a></li>
-                  <li><a href="/#!/">Wefit.ly</a></li>
-                  <li><a href="/#!/">MyKicks</a></li>
+                  <li><a href="/#!/wefitly">Wefit.ly</a></li>
+                  <li><a href="/#!/mykicks">MyKicks</a></li>
                 </ul>
           </li>
           <li><a class="menu" href="/#/blog">Blog</a></li>
         </ul>
     </div>
   </nav>
-
-  
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-12 collection text-center">
@@ -51,17 +49,13 @@
                   </div>
                 </div>
               </div>
-        <h4 id="description">
-         {{portfolio.desc}} 
-        </h4>
+            <h4 id="description">{{portfolio.desc}}</h4>
         </div>
     </div>
-    <div class="row">
-      <div class="col-sm-12 text-center temp">
-        <h2>
-          TEACHNOLOGY
-        </h2>
-        <img src="https://www.brainvire.com/wp-content/uploads/new_full_circle_image.png" alt="">
-      <div>
-    </div>
+     <div class="col-sm-12 temp text-center"><div>
+       <div>
+          <h1> TEACHNOLOGY </h1>
+          <img id="stack" src="../style/images/{{portfolio.path}}/{{portfolio.stack}}" alt="">
+       </div>
+       <a class="project-url" href="https://the-gauntlet2.herokuapp.com">https://the-gauntlet2.herokuapp.com<a>   
   </div>
