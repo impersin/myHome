@@ -1,0 +1,164 @@
+
+  body{
+    background-image: url('http://wall.rimbuz.com/wp-content/uploads/Plain-Black-HD-Desktop-Backgrounds-728x410.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid white;
+  }
+
+  .navbar{
+    background-color: black !important;
+    height: 20px;
+  }
+  .menu {
+    color:white !important;
+  }  
+
+  .wrapper {
+    /*border: 1px dashed white;*/
+  }
+
+  .main-content{
+    height: 600px;
+    margin-left:250px;
+    margin-top:100px;
+    /*background-color: grey;*/
+    background-image: url("../style/images/mac.png");
+    background-size: 100% 100%;
+    /*border: 2px solid white;*/
+  }
+
+  #title{
+    margin-left:10px;
+    margin-bottom:35px;
+  } 
+
+  #profile-img{
+    width:250px;
+    height:330px;
+    float: left;
+    position: relative;
+    left: 100px;
+    top: 60px;
+    border-radius: 5px;
+  }
+
+  .intro{
+    margin:40px 0 0 120px;
+    color: #D2D2D2;
+  }
+
+  ul{
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .contact{
+    margin-top:40px;
+  }
+  #email, #linkedin, #cell {
+    margin-right:10px;
+  }
+
+  span,a{
+    color: black;
+  }
+  li{
+    margin-bottom: 10px;
+  }
+
+  li > span{
+    color:white;
+  }
+
+  a.linkedin-link {
+    color:#FFFFFF;
+    }
+  a:hover {
+    color:#F00F00 !important;
+    text-decoration:none !important;
+  }
+
+/*------------------------------ home page end ----------------------*/
+
+
+
+/*------------------------------ portfolio ----------------------*/
+
+  .collection{
+    height: 800px;
+    background-image: url("https://img.clipartfest.com/ae4ca24d59558527b3058bc24c9f29bf_-ipadpng-ipad-clipart-png_650-439.png");
+    background-repeat: no-repeat;
+    background-size:1200px 690px;
+    background-position:100px;    
+  }
+
+  .project{
+    /*height: 400px;*/
+    margin-bottom:10px;
+  }
+  /*.project:nth-child(odd) > img{
+    float:right;
+  }*/
+
+  /*.project-desc{
+    color:white;
+    margin-top:90px;
+    border: 1px solid blue;
+    height: 250px;
+  }*/
+  .project-header{
+    text-align: center;
+    height: 320px;
+  }
+
+  #project-title {
+    margin-top:0;
+    margin-bottom: 30px;
+    color: #F1FFFF;
+  }
+
+  .project-cover{
+    margin-bottom:10px;
+  }
+
+  #url{
+    color: white;
+  }
+  
+  #stack-image{
+    border-radius: 80%;
+  }
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  .carousel-indicators{
+    position:relative;
+    top: 645px; 
+  }
+
+  .screenshot{
+    width:460px; 
+    height:345px;
+    margin-top:25px !important;
+    border-radius: 10px;
+  }
+
+  h4#description{
+    margin-top:70px;
+    color:white;
+  }
+
+.temp{
+  width:500px;
+  height: 500px;
+  border:1px dahed white;
+}
+
+  
+
+
