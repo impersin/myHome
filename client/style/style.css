@@ -1,9 +1,11 @@
-
+  @import url('https://fonts.googleapis.com/css?family=Passion+One|Yantramanav:300');
+  
   body{
     background-image: url('http://wall.rimbuz.com/wp-content/uploads/Plain-Black-HD-Desktop-Backgrounds-728x410.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid white;
+    font-family: 'Passion One';
+    /*border: 1px solid white;*/
   }
 
   .navbar{
@@ -46,6 +48,10 @@
   .intro{
     margin:40px 0 0 120px;
     color: #D2D2D2;
+  }
+
+  #narrative{
+    font-family: 'Yantramanav', sans-serif;
   }
 
   ul{
@@ -115,7 +121,7 @@
   #project-title {
     margin-top:0;
     margin-bottom: 30px;
-    color: #F1FFFF;
+    color: white;
   }
 
   .project-cover{
@@ -149,14 +155,24 @@
   }
 
   h4#description{
-    margin-top:70px;
+    margin-top:50px;
+    margin-bottom:50px;
     color:white;
   }
 
 .temp{
-  width:500px;
   height: 500px;
-  border:1px dahed white;
+  background-color: white;
+  background-image: url("")
+}
+
+img#stack{
+  border-radius: 60px;
+  margin-bottom: 30px;
+}
+a.project-url{
+  font-size: 1.5em;
+  colr
 }
 
   
