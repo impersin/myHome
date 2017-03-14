@@ -93,10 +93,11 @@
 
   .collection{
     height: 800px;
-    background-image: url("https://img.clipartfest.com/ae4ca24d59558527b3058bc24c9f29bf_-ipadpng-ipad-clipart-png_650-439.png");
+    background-image: url();
     background-repeat: no-repeat;
     background-size:1200px 690px;
-    background-position:100px;    
+    background-position:100px;
+    /*margin-bottom: 50px;    */
   }
 
   .project{
@@ -144,7 +145,7 @@
   }
   .carousel-indicators{
     position:relative;
-    top: 645px; 
+    top: 700px; 
   }
 
   .screenshot{
@@ -154,10 +155,10 @@
     border-radius: 10px;
   }
 
-  h4#description{
+  h3#description{
     margin-top:50px;
     margin-bottom:50px;
-    color:white;
+    color:black;
   }
 
 .temp{
@@ -172,7 +173,6 @@ img#stack{
 }
 a.project-url{
   font-size: 1.5em;
-  colr
 }
 
   
