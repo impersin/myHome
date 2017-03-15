@@ -1,7 +1,7 @@
   @import url('https://fonts.googleapis.com/css?family=Passion+One|Yantramanav:300');
   
   body{
-    background-image: url('http://wall.rimbuz.com/wp-content/uploads/Plain-Black-HD-Desktop-Backgrounds-728x410.jpg');
+    background-image: url('../style/images/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Passion One';
@@ -22,6 +22,7 @@
 
   .main-content{
     height: 600px;
+    min-width: 900px;
     margin-left:250px;
     margin-top:100px;
     /*background-color: grey;*/
@@ -46,12 +47,15 @@
   }
 
   .intro{
+    min-width:50px;
     margin:40px 0 0 120px;
     color: #D2D2D2;
   }
 
   #narrative{
     font-family: 'Yantramanav', sans-serif;
+    min-width: 100px;
+
   }
 
   ul{
