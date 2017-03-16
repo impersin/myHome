@@ -5,7 +5,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Passion One';
-    /*border: 1px solid white;*/
   }
 
   .navbar{
@@ -16,19 +15,15 @@
     color:white !important;
   }  
 
-  .wrapper {
-    /*border: 1px dashed white;*/
-  }
 
   .main-content{
     height: 600px;
     min-width: 900px;
-    
     margin-top:200px;
-    /*background-color: grey;*/
     background-image: url("../style/images/mac.png");
-    background-size: 100% 100%;
-    /*border: 2px solid white;*/
+    background-size: 1000px 700px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   #title{
@@ -37,25 +32,27 @@
   } 
 
   #profile-img{
-    width:250px;
-    height:330px;
+    width:260px;
+    height:350px;
     float: left;
     position: relative;
-    left: 100px;
-    top: 60px;
+    left: 15px;
+    top: 0px;
     border-radius: 5px;
   }
 
   .intro{
+    width: 800px;
+    height: 400px;
     min-width:50px;
-    margin:40px 0 0 120px;
+    margin:0 auto;
     color: #D2D2D2;
   }
 
   #narrative{
     font-family: 'Yantramanav', sans-serif;
+    margin-bottom:80px;
     min-width: 100px;
-
   }
 
   ul{
@@ -63,9 +60,12 @@
     list-style: none;
   }
 
-  .contact{
-    margin-top:40px;
+  .desc{
+    width:480px;
+    height: 400px;
+    margin:40px 0 0 300px;
   }
+
   #email, #linkedin, #cell {
     margin-right:10px;
   }
@@ -101,23 +101,12 @@
     background-repeat: no-repeat;
     background-size:1200px 690px;
     background-position:100px;
-    /*margin-bottom: 50px;    */
   }
 
   .project{
-    /*height: 400px;*/
     margin-bottom:10px;
   }
-  /*.project:nth-child(odd) > img{
-    float:right;
-  }*/
-
-  /*.project-desc{
-    color:white;
-    margin-top:90px;
-    border: 1px solid blue;
-    height: 250px;
-  }*/
+  
   .project-header{
     text-align: center;
     height: 320px;
@@ -142,7 +131,7 @@
   }
 
 
-.carousel-inner > .item > img,
+  .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
@@ -152,14 +141,14 @@
     top: 700px; 
   }
 
-  .screenshot{
+.screenshot{
     width:460px; 
     height:345px;
     margin-top:25px !important;
     border-radius: 10px;
   }
 
-  h3#description{
+h3#description{
     margin-top:50px;
     margin-bottom:50px;
     color:black;
@@ -175,8 +164,13 @@ img#stack{
   border-radius: 60px;
   margin-bottom: 30px;
 }
+
 a.project-url{
   font-size: 1.5em;
+}
+
+span.glyphicon {
+  color: white !important;
 }
 
   
