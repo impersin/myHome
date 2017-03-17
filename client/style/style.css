@@ -13,6 +13,10 @@
   }
   .menu {
     color:white !important;
+  }
+
+  .dropdown-menu{
+    width:20px !important;
   }  
 
 
@@ -52,6 +56,7 @@
   #narrative{
     font-family: 'Yantramanav', sans-serif;
     margin-bottom:80px;
+    font-weight: bold;
     min-width: 100px;
   }
 
@@ -173,5 +178,21 @@ span.glyphicon {
 }
 
   
+/* resume */
+
+.resume-preview{
+  margin:100px 0 100px 0;
+}
+
+.download{
+  color:white !important;
+}
+
+#resume {
+  width: 700px;
+  height: 900px;
+  border-radius: 2px;
+  margin:50px 0 50px 0;
+}
 
 
