@@ -30,5 +30,9 @@ app.config(($routeProvider) => {
     templateUrl: 'views/blog.html',
     controller: 'blogController'
   })
+  .when('/resume', {
+    templateUrl: 'views/resume.html',
+    controller: ''
+  })
   .otherwise({redirectTo: '/'});
 });
