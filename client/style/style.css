@@ -64,38 +64,11 @@
   #name{
     font-size: 4.5em;
     font-weight:initial;
-  }
-  .main-content{
-    height: 600px;
-    min-width: 900px;
-    margin-top:200px;
-    /*background-image: url("../style/images/mac.png");*/
-    background-size: 1000px 700px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  #title{
-    margin-left:10px;
-    margin-bottom:35px;
   } 
 
-  #profile-img{
-    width:260px;
-    height:350px;
-    float: left;
-    position: relative;
-    left: 15px;
-    top: 0px;
-    border-radius: 5px;
-  }
-
-  .intro{
-    width: 800px;
+  .container{
     height: 400px;
-    min-width:50px;
-    margin:0 auto;
-    color: #D2D2D2;
+    /*border:1px solid red;*/
   }
 
   #narrative{
@@ -113,9 +86,6 @@
   }
 
   .desc{
-    width:480px;
-    height: 400px;
-    margin:40px 0 0 300px;
   }
 
   #email, #linkedin, #cell, #bullet {
