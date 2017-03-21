@@ -25,8 +25,8 @@
   </nav>
   <div class="jumbotron fadein temp">
     <div class="greet">
-      <h1 id="name">Terry Leem</h1>      
-      <p id="job-title">I'm a Fullstack Javascript Developer</p>
+      <h1 id="name">{{profile.firstName}} {{profile.lastName}}</h1>      
+      <p id="job-title">I'm a {{profile.title}}</p>
       -만나서 반갑습니다-
     </div>
   </div>
@@ -35,24 +35,17 @@
         <div class="col-sm-6">
           <div>
            <h2>15 seconds about me</h2>
-             <ul>
-               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>I am Korean</span><br/></li>
-               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>Korean name is Taegyu Leem</span></li>
-               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>Took 10 years to become a Software engineer</span></li>
-               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>Like Angular and React equally</span></li>
-               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>A good basketball player</span></li>
-               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>Failed my driving test 5 times</span></li>
-               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>Looking for a job</span></li>
-               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>Thank you for your time</span></li>
+             <ul ng-repeat="list in profile.about">
+               <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>{{list}}</span><br/></li>
              </ul> 
           </div>
         </div>
         <div class="col-sm-6">
           <h2>Contact</h2>
           <ul>
-            <li><img id="email" src="../style/images/email.png" alt="" width="20px" height="20px"><a class="email" href="mailto:closer124@gmail">Send email</a></li>
-            <li><img id="linkedin" src="../style/images/linkedin.png" alt="" width="20px" height="20px"><a class="linkedin-link" href="https://www.linkedin.com/in/impersin">www.linkedin.com/in/impersin<a></li>
-            <li><img id="linkedin" src="../style/images/git.png" alt="" width="20px" height="20px"><a class="linkedin-link" href="https://github.com/impersin/">https://github.com/impersin/<a></li>
+            <li><img id="email" src="../style/images/email.png" alt="" width="20px" height="20px"><a class="email" href="mailto:{{profile.email}}">Send email</a></li>
+            <li><img id="linkedin" src="../style/images/linkedin.png" alt="" width="20px" height="20px"><a class="linkedin-link" href="{{profile.linkedIn}}">linkedin.com/in/impersin<a></li>
+            <li><img id="linkedin" src="../style/images/git.png" alt="" width="20px" height="20px"><a class="linkedin-link" href="{{profile.github}}">github.com/impersin<a></li>
             <li><img id="cell" src="../style/images/phone.png" alt="" width="20px" height="20px"><span>(925)577-1355</span></li>
           </ul>    
         </div>  
