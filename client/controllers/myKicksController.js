@@ -8,6 +8,11 @@ angular.module('myApp.myKicks', [])
       stack: 'tglStack.png',
       path: 'mykicks',
       images: ['cover.png', 'img1.png', 'img2.png', 'img3.png', 'img4.png'],
-      stack: 'stack.png'
+      stack: 'stack.png',
+      info: [
+        ['Angular', ],
+        ['MySQL', ''],
+        ['Node + Express', '']
+      ]
     };  
   });

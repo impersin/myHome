@@ -65,11 +65,30 @@
         </div>
     </div>
   </div>
-  <div class="col-sm-12 stack text-center container-fluid">
-    <h4 id="description">{{portfolio.desc}}</h4>
-    <div>
-      <h1> Technology Stack </h1>
-      <img id="stack" src="../style/images/{{portfolio.path}}/{{portfolio.stack}}" alt="">
+  <div class="tech text-center container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <h4 id="app-desc">{{portfolio.desc}}</h4>
+        <h1><img src="../style/images//core1.png" width="120px" height="120px">Technology</h1>
+      </div>
     </div>
-    <a class="project-url" href="{{portfolio.url}}">{{portfolio.url}}<a>   
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="tech-desc">
+          <img id="tech-image" src="../style/images/{{portfolio.path}}/{{portfolio.stack}}" alt="">
+        <div id="tech-info">
+          <h4>
+          <!--Contributions-->
+          </h4>
+          <ul ng-repeat="list in portfolio.info" >
+            <li>
+              <em>{{list[0]}}</em><br/>
+              <!--{{list[1]}}-->
+            </li>
+        </div>
+        <a class="project-url" href="{{portfolio.url}}">Click to Visit Thegauntlet<a>
+      </div>
+    </div>
+    </div>
   <div>
+    
