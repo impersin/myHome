@@ -10,7 +10,7 @@ angular.module('myApp.wefitly', [])
       stack: 'stack.png',
       info: [
         ['React', ''],
-        ['MongDB', ''],
+        ['MongoDB', ''],
         ['Node + Express', '']
       ]
     };  
