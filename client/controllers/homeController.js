@@ -4,7 +4,7 @@ angular.module('myApp.home', [])
       firstName: 'Terry',
       lastName: 'Leem',
       title: 'Full stack Javacript Developer',
-      email: 'closer124@gmail.com',
+      email: 'taegyuleem@gmail.com',
       linkedIn: 'https://www.linkedin.com/in/impersin',
       github: 'https://github.com/impersin/',
       phone: '(925) 577-1355',
