@@ -12,11 +12,10 @@ angular.module('myApp.home', [])
         'I am Korean',
         'Korean name is Taegyu Leem',
         'Took 10 years to become a Software engineer',
-        'Like Angular and React equally,',
+        'Like Angular and React equally',
         'A good basketball player',
         'Failed my driving test 5 times',
-        'Looking for a job',
-        'Thank you for your time'    
+        'Looking for a job',    
       ]
     };
   });
