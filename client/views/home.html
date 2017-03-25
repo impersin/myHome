@@ -8,17 +8,17 @@
           <li class="dropdown">
               <a class="menu dropdown-toggle" data-toggle="dropdown" href="">Portfolio</a>
                 <ul class="dropdown-menu">
-                  <li><a href="/#!/thegauntlet">Thegauntlet</a></li>
-                  <li><a href="/#!/wefitly">Wefit.ly</a></li>
-                  <li><a href="/#!/mykicks">MyKicks</a></li>
+                  <li><a class="navLink" href="/#!/thegauntlet">Thegauntlet</a></li>
+                  <li><a class="navLink" href="/#!/wefitly">Wefit.ly</a></li>
+                  <li><a class="navLink" href="/#!/mykicks">MyKicks</a></li>
                 </ul>
           </li>
           <li><a class="menu" href="/#!/blog">Blog</a></li>
           <li class="dropdown">
               <a class="menu dropdown-toggle" data-toggle="dropdown" href="">Resume</a>
                 <ul class="dropdown-menu">
-                  <li><a href="/#!/resume">Preview</a></li>
-                  <li><a href="../style/images/TaegyuLeemResume.pdf" download>Download</a></li>
+                  <li><a class="navLink" href="/#!/resume">Preview</a></li>
+                  <li><a class="navLink" href="../style/images/TaegyuLeemResume.pdf" download>Download</a></li>
                 </ul>
         </ul>
     </div>
@@ -34,20 +34,23 @@
       <div class="row">
         <div class="col-sm-6">
           <div>
-           <h2>15 seconds about me</h2>
-             <ul ng-repeat="list in profile.about">
+            <h2><a ng-click="aboutMeToggle()" href="">15 seconds about me</a></h2>
+           <!--<h2 ng-click="myFunc()">15 seconds about me</h2>-->
+             <ul ng-repeat="list in profile.about" ng-show="aboutMe">
                <li><img id="bullet" src="../style/images/bullet.png" alt="" width="15px" height="15px"><span>{{list}}</span><br/></li>
-             </ul> 
+             </ul>
+             <a id="bottom"></a>   
           </div>
         </div>
         <div class="col-sm-6">
-          <h2>Contact</h2>
-          <ul>
-            <li><img id="email" src="../style/images/email.png" alt="" width="20px" height="20px"><a class="email" href="mailto:{{profile.email}}">Send email</a></li>
+          <h2><a ng-click="contactToggle()" href="">Contact</a></h2>
+          <ul ng-show="contact">
+            <li ng-click="gotoBottom()"><img id="email" src="../style/images/email.png" alt="" width="20px" height="20px"><a class="email" href="mailto:{{profile.email}}">Send email</a></li>
             <li><img id="linkedin" src="../style/images/linkedin.png" alt="" width="20px" height="20px"><a class="linkedin-link" href="{{profile.linkedIn}}">linkedin.com/in/impersin<a></li>
             <li><img id="linkedin" src="../style/images/git.png" alt="" width="20px" height="20px"><a class="linkedin-link" href="{{profile.github}}">github.com/impersin<a></li>
             <li><img id="cell" src="../style/images/phone.png" alt="" width="20px" height="20px"><span>(925)577-1355</span></li>
-          </ul>    
+          </ul>
+          <a id="bottom"></a>    
         </div>  
       </div>      
 </div>
