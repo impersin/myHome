@@ -13,6 +13,7 @@ angular.module('myApp.thegauntlet', [])
         ['AWS S3', 'Large amounts of data securely and allow instantaneous access for user with AWS'],
         ['MySQL', ''],
         ['Node + Express', '']
-      ]
+      ],
+      linkTitle: 'Click to Visit Thegauntlet'
     };
   });

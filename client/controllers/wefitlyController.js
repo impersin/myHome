@@ -12,6 +12,7 @@ angular.module('myApp.wefitly', [])
         ['React', ''],
         ['MongoDB', ''],
         ['Node + Express', '']
-      ]
+      ],
+      linkTitle: ''
     };  
   });

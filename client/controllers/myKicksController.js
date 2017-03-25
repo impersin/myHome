@@ -13,6 +13,7 @@ angular.module('myApp.myKicks', [])
         ['Angular', ],
         ['MySQL', ''],
         ['Node + Express', '']
-      ]
+      ],
+      linkTitle: ''
     };  
   });
