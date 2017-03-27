@@ -25,12 +25,12 @@ angular.module('myApp.home', [])
       phone: '(925) 577-1355',
       about: [
         'I am Korean',
-        'Korean name is Taegyu Leem',
-        'Took 10 years to become a Software engineer',
-        'Like Angular and React equally',
+        'Korean name is Taegyu',
+        'Left korea $5k in my poket',
+        'Used to be a latte artist',
         'A good basketball player',
-        'Failed my driving test 5 times',
-        'Looking for a job',    
+        'Big dog person',
+        'Like dancing & singing'
       ]
     };
     $scope.gotoBottom = function () {
