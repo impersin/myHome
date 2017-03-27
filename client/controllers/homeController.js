@@ -26,7 +26,7 @@ angular.module('myApp.home', [])
       about: [
         'I am Korean',
         'Korean name is Taegyu',
-        'Left korea $5k in my poket',
+        'Left korea $5k in my pocket',
         'Used to be a latte artist',
         'A good basketball player',
         'Big dog person',
