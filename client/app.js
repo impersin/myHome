@@ -30,6 +30,10 @@ app.config(($routeProvider) => {
     templateUrl: 'views/blog.html',
     controller: 'blogController'
   })
+  .when('/gallery', {
+    templateUrl: 'views/gallery.html',
+    controller: 'galleryController'
+  })
   .when('/resume', {
     templateUrl: 'views/resume.html',
     controller: ''
