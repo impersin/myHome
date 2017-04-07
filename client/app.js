@@ -5,7 +5,10 @@ const app = angular.module('myApp', [
   'myApp.thegauntlet',
   'myApp.wefitly',
   'myApp.myKicks',
-  'myApp.blog'
+  'myApp.blog',
+  'myApp.gallery',
+  'myApp.factory',
+  'jtt_angular_xgallerify'
 ]);
 
 app.config(($routeProvider) => {
@@ -32,7 +35,12 @@ app.config(($routeProvider) => {
   })
   .when('/gallery', {
     templateUrl: 'views/gallery.html',
-    controller: 'galleryController'
+    controller: 'galleryController',
+    resolve: {
+      resolvedImages: function(factory) {
+        return factory.getAll();
+      }
+    }
   })
   .when('/resume', {
     templateUrl: 'views/resume.html',
