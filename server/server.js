@@ -6,8 +6,7 @@ const AWS = require('aws-sdk');
 const isDeveloping = process.env.NODE_ENV !== 'production';
 // const option = AWS.config.loadFromPath('./config.json');
 // const option = require('./config.json');
-
-if (isDeveloping) {
+if (!isDeveloping) {
   AWS.config.update({
     accessKeyId: process.env.S3_KEY, 
     secretAccessKey: process.env.S3_SECRET, 
