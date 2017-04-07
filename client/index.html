@@ -4,9 +4,8 @@
   <title>Terry's personal website</title>
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> -->
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -24,7 +23,7 @@
                   <li><a class="navLink" href="/#!/mykicks">MyKicks</a></li>
                 </ul>
           </li>
-          <!--<li><a class="menu" href="">Blog</a></li>-->
+          <li><a class="menu" href="/#!/gallery">Terry's Life</a></li>
           <li class="dropdown">
               <a class="menu dropdown-toggle" data-toggle="dropdown" href="">Resume</a>
                 <ul class="dropdown-menu">
@@ -38,6 +37,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.xgallerify/latest/jquery.xgallerify.min.js"></script>
+
+<!-- angular-xGallerify -->
+<script src="./src/angular-xgallerify.min.js"></script>
   
   <script src="app.js"></script>
   <script src="./controllers/homeController.js"></script>
@@ -46,5 +49,7 @@
   <script src="./controllers/wefitlyController.js"></script>
   <script src="./controllers/myKicksController.js"></script>
   <script src="./controllers/blogController.js"></script>
+  <script src="./controllers/galleryController.js"></script>
+  <script src="./factory/myFactory.js"></script>
 </body>
 </html>
