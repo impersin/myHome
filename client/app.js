@@ -11,22 +11,33 @@ const app = angular.module('myApp', [
   'jtt_angular_xgallerify'
 ]);
 
-app.controller('indexController', function($scope, factory) {
+app.controller('indexController', function($scope, factory, $interval) {
   $scope.index = 0;
+  $scope.weather;
+  $scope.theTime = new Date().toLocaleTimeString();
+  factory.getWeather().then((res) =>{
+    $scope.weatherData = res.data.query.results.channel;
+    $scope.getWeather();
+    $interval(function () {
+      $scope.theTime = new Date().toLocaleTimeString();
+    }, 1000);      
+  });
   $scope.getWeather = function() {
-    factory.getWeather().then((res) =>{
-      if ($scope.index === res.data.query.results.channel.length) {
-        $scope.index = 0;
-      } 
-      let location = res.data.query.results.channel[$scope.index].location;
-      let condition = res.data.query.results.channel[$scope.index].item.condition; 
-      $scope.weather = location.city + '  ' + condition.temp + ' °C  ' + condition.text;
-      $scope.index++;
-    });
+    if ($scope.index === $scope.weatherData.length) {
+      $scope.index = 0;
+    } 
+    let location = $scope.weatherData[$scope.index].location;
+    let condition = $scope.weatherData[$scope.index].item.condition; 
+    $scope.weather = location.city + '  ' + condition.temp + ' °C  ' + condition.text;
+    console.log($scope.weather);
+    $scope.index++;
   };
-  $scope.getWeather();   
-  setInterval(function() {
-    $scope.getWeather();   
+  // $interval(function () {
+  //   $scope.theTime = new Date().toLocaleTimeString();
+  // }, 1000);
+
+  $interval(function () {
+    $scope.getWeather();
   }, 5000);
 });
 
