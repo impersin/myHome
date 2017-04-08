@@ -29,7 +29,6 @@ app.controller('indexController', function($scope, factory, $interval) {
     let location = $scope.weatherData[$scope.index].location;
     let condition = $scope.weatherData[$scope.index].item.condition; 
     $scope.weather = location.city + '  ' + condition.temp + ' °C  ' + condition.text;
-    console.log($scope.weather);
     $scope.index++;
   };
   // $interval(function () {
