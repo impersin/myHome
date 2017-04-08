@@ -1,5 +1,5 @@
 angular.module('myApp.home', [])
-  .controller('homeController', function($scope, $location, $anchorScroll) {
+  .controller('homeController', function($scope, $location, $anchorScroll, factory) {
     $scope.aboutMe = false;
     $scope.contact = false;
     $scope.aboutMeToggle = function() {
@@ -41,5 +41,5 @@ angular.module('myApp.home', [])
     // call $anchorScroll()
       $anchorScroll();
       $location.hash('');
-    };  
+    };
   });

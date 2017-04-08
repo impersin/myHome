@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/jquery.xgallerify/latest/jquery.xgallerify.min.js"></script>
   <script src="./src/angular-xgallerify.min.js"></script>
 </head>
-<body>
+<body ng-controller="indexController">
     <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -35,11 +35,11 @@
                   <li><a class="navLink" href="/#!/resume">Preview</a></li>
                   <li><a class="navLink" href="../style/images/TaegyuLeemResume.pdf" download>Download</a></li>
                 </ul>
+                <li><a class="menu weather"></a></li>
         </ul>
-    </div>
+        <span class="navbar-brand weather fadein">{{weather}}</span>
   </nav>
   <div ng-view></div>
-  
   <script src="app.js"></script>
   <script src="./controllers/homeController.js"></script>
   <script src="./controllers/portfolioController.js"></script>

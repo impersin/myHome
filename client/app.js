@@ -11,6 +11,25 @@ const app = angular.module('myApp', [
   'jtt_angular_xgallerify'
 ]);
 
+app.controller('indexController', function($scope, factory) {
+  $scope.index = 0;
+  $scope.getWeather = function() {
+    factory.getWeather().then((res) =>{
+      if ($scope.index === res.data.query.results.channel.length) {
+        $scope.index = 0;
+      } 
+      let location = res.data.query.results.channel[$scope.index].location;
+      let condition = res.data.query.results.channel[$scope.index].item.condition; 
+      $scope.weather = location.city + '  ' + condition.temp + ' °C  ' + condition.text;
+      $scope.index++;
+    });
+  };
+  $scope.getWeather();   
+  setInterval(function() {
+    $scope.getWeather();   
+  }, 5000);
+});
+
 app.config(($routeProvider) => {
   $routeProvider
   .when('/', {

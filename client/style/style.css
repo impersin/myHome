@@ -119,6 +119,11 @@
     color: black !important;
   }
 
+  .weather{
+    position: relative;
+    left: 30%;
+  }
+
 /*------------------------------ home page end ----------------------*/
 
 /*------------------------------ portfolio ----------------------*/
@@ -266,3 +271,4 @@ a.project-url{
 [x-ng-click] {
     cursor: pointer;
 }
+

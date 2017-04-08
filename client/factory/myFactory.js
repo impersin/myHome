@@ -15,6 +15,15 @@ angular.module('myApp.factory', [])
       .then(function(res) {
         return res;
       });
+    },
+    getWeather: function() {
+      return $http({
+        method: 'GET',
+        url: '/api/weather'
+      })
+      .then(function(res) {
+        return res;
+      });
     }
   };
 }); 
