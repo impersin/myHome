@@ -17,7 +17,7 @@ app.controller('indexController', function($scope, factory, $interval) {
   $scope.theTime = new Date().toLocaleTimeString();
   factory.getWeather().then((res) =>{
     $scope.weatherData = res.data.query.results.channel;
-    $scope.getWeather();
+    //$scope.getWeather();
     $interval(function () {
       $scope.theTime = new Date().toLocaleTimeString();
     }, 1000);      
@@ -35,9 +35,9 @@ app.controller('indexController', function($scope, factory, $interval) {
   //   $scope.theTime = new Date().toLocaleTimeString();
   // }, 1000);
 
-  $interval(function () {
-    $scope.getWeather();
-  }, 5000);
+  // $interval(function () {
+  //   $scope.getWeather();
+  // }, 5000);
 });
 
 app.config(($routeProvider) => {
