@@ -15,13 +15,10 @@ app.controller('indexController', function($scope, factory, $interval) {
   $scope.index = 0;
   $scope.weather;
   $scope.theTime = new Date().toLocaleTimeString();
-  factory.getWeather().then((res) =>{
-    $scope.weatherData = res.data.query.results.channel;
-    //$scope.getWeather();
-    $interval(function () {
-      $scope.theTime = new Date().toLocaleTimeString();
-    }, 1000);      
-  });
+  // factory.getWeather().then((res) =>{
+  //   $scope.weatherData = res.data.query.results.channel;
+  //   $scope.getWeather();
+  // });
   $scope.getWeather = function() {
     if ($scope.index === $scope.weatherData.length) {
       $scope.index = 0;
@@ -31,6 +28,9 @@ app.controller('indexController', function($scope, factory, $interval) {
     $scope.weather = location.city + '  ' + condition.temp + ' °C  ' + condition.text;
     $scope.index++;
   };
+  $interval(function () {
+    $scope.theTime = new Date().toLocaleTimeString();
+  }, 1000);         
   // $interval(function () {
   //   $scope.theTime = new Date().toLocaleTimeString();
   // }, 1000);
