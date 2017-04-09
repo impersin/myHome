@@ -9,7 +9,7 @@ const isDeveloping = process.env.NODE_ENV !== 'production';
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());  
-// app.use(express.static(path.join(__dirname, '/../client')));
+app.use(express.static(path.join(__dirname, '/../client')));
 
 if (!isDeveloping) {
   AWS.config.update({
