@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const app = express();
 const AWS = require('aws-sdk');
-// const YQL = require('yql');
+const YQL = require('yql');
 const isDeveloping = process.env.NODE_ENV !== 'production';
 // const option = AWS.config.loadFromPath('./config.json');
 // const option = require('./config.json');
@@ -35,14 +35,14 @@ app.get('/api/images', (req, res)=>{
   });
 });
 
-// let query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text in ("san francisco, ca", "pleasanton, ca", "dublin, ca", "palo alto, ca", "san mateo, ca"))');
+let query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text in ("san francisco, ca", "pleasanton, ca", "dublin, ca", "palo alto, ca", "san mateo, ca"))');
 
-// app.get('/api/weather', (req, res)=>{
-//   query.exec(function(err, data) {
-//     if (err) { throw err; }
-//     res.send(data);
-//   }); 
-// });
+app.get('/api/weather', (req, res)=>{
+  query.exec(function(err, data) {
+    if (err) { throw err; }
+    res.send(data);
+  }); 
+});
 
 const port = process.env.PORT || 8080;
 

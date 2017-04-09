@@ -14,10 +14,11 @@ const app = angular.module('myApp', [
 app.controller('indexController', function($scope, factory, $interval) {
   $scope.index = 0;
   $scope.weather;
-  // factory.getWeather().then((res) =>{
-  //   $scope.weatherData = res.data.query.results.channel;
-  //   $scope.getWeather();      
-  // });
+  factory.getWeather().then((res) =>{
+    $scope.theTime = new Date().toLocaleTimeString();
+    $scope.weatherData = res.data.query.results.channel;
+    $scope.getWeather();      
+  });
   $scope.getWeather = function() {
     if ($scope.index === $scope.weatherData.length) {
       $scope.index = 0;
