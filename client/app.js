@@ -14,11 +14,10 @@ const app = angular.module('myApp', [
 app.controller('indexController', function($scope, factory, $interval) {
   $scope.index = 0;
   $scope.weather;
-  $scope.theTime = new Date().toLocaleTimeString();
-  // factory.getWeather().then((res) =>{
-  //   $scope.weatherData = res.data.query.results.channel;
-  //   $scope.getWeather();
-  // });
+  factory.getWeather().then((res) =>{
+    $scope.weatherData = res.data.query.results.channel;
+    $scope.getWeather();      
+  });
   $scope.getWeather = function() {
     if ($scope.index === $scope.weatherData.length) {
       $scope.index = 0;
@@ -30,14 +29,11 @@ app.controller('indexController', function($scope, factory, $interval) {
   };
   $interval(function () {
     $scope.theTime = new Date().toLocaleTimeString();
-  }, 1000);         
-  // $interval(function () {
-  //   $scope.theTime = new Date().toLocaleTimeString();
-  // }, 1000);
+  }, 1000);
 
-  // $interval(function () {
-  //   $scope.getWeather();
-  // }, 5000);
+  $interval(function () {
+    $scope.getWeather();
+  }, 4000);
 });
 
 app.config(($routeProvider) => {
