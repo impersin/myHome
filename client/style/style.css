@@ -86,9 +86,6 @@
     list-style: none;
   }
 
-  .desc{
-  }
-
   #email, #linkedin, #cell, #bullet {
     margin-right:10px;
   }
@@ -104,10 +101,11 @@
     color: white;
   }
   .widget{
-    margin-left: 100px !important;
+    margin-left:50px !important;
+    width: 315px;
   }
   .weather{
-    width:350px;
+    width:300px;
   }
 
   .linkedin-link,.email {
