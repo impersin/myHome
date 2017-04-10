@@ -35,7 +35,7 @@ app.get('/api/images', (req, res)=>{
   });
 });
 
-let query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text in ("san francisco, ca", "pleasanton, ca", "dublin, ca", "palo alto, ca", "san mateo, ca"))');
+let query = new YQL('select * from weather.forecast where woeid in (select woeid from geo.places(1) where text in ("san francisco, ca", "pleasanton, ca", "dublin, ca", "palo alto, ca", "san mateo, ca", "berkeley, ca","oakland, ca","san jose, ca"))');
 
 app.get('/api/weather', (req, res)=>{
   query.exec(function(err, data) {

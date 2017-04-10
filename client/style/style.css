@@ -103,6 +103,12 @@
   li > span{
     color: white;
   }
+  .widget{
+    margin-left: 100px !important;
+  }
+  .weather{
+    width:350px;
+  }
 
   .linkedin-link,.email {
     color:white;
@@ -119,10 +125,6 @@
     color: black !important;
   }
 
-  .weather{
-    position: relative;
-    left: 30%;
-  }
 
 /*------------------------------ home page end ----------------------*/
 
