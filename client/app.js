@@ -34,7 +34,7 @@ app.controller('indexController', function($scope, factory, $interval) {
 
   $interval(function () {
     $scope.getWeather();
-  }, 4000);
+  }, 4500);
 });
 
 app.config(($routeProvider) => {
