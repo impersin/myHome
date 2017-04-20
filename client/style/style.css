@@ -13,26 +13,19 @@
   }
 
   .navbar{
-    /*width:100%;*/
-    min-width: 500px;
     background-color: black !important;
-    height: 20px;
   }
   .menu {
     color:white !important;
   }
 
-  .dropdown-menu{
-    width:20px !important;
-  }  
 
   .jumbotron{
-    height: 750px;
+    height: 670px;
     background-image: url("../style/images/jeju_bw.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    border:1px solid grey;
   }
 
   .fadein{
@@ -55,22 +48,16 @@
 }
 
   .greet{
-    width:70%;
-    margin:470px 0 0 0;
-    text-align: center;
+    margin:400px 0 0 0;
   }
+
   #job-title{
     font-size: 2.5em;
     color:white;
   }
   #name{
     font-size: 4.5em;
-    font-weight:initial;
   } 
-
-  .container{
-    /*border:1px solid red;*/
-  }
 
   #narrative{
     width: 400px;
@@ -93,15 +80,11 @@
   span{
     color:black;
   }
-  li{
-    margin-bottom: 10px;
-  }
 
   li > span{
     color: white;
   }
   .widget{
-    margin-left:50px !important;
     width: 350px;
   }
   .weather{
