@@ -13,30 +13,45 @@
   <script src="./src/angular-xgallerify.min.js"></script>
 </head>
 <body ng-controller="indexController">
-    <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid temp">
-        <ul class="nav navbar-nav">
-          <li><span class="navbar-brand menu">Welcome</span><li>
-          <li><a class="menu" href="#">Home</a></li>
-          <li class="dropdown">
-              <a class="menu dropdown-toggle" data-toggle="dropdown" href="">Portfolio</a>
+    
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">Home</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <ul class="nav navbar-nav collapse navbar-collapse">
+            <li>
+              <a class="menu dropdown-toggle fadein" data-toggle="dropdown" href="">Portfolio</a>
                 <ul class="dropdown-menu">
                   <li><a class="navLink" href="/#!/thegauntlet">Thegauntlet</a></li>
+                  <li class="divider"></li>
                   <li><a class="navLink" href="/#!/wefitly">Wefit.ly</a></li>
+                  <li class="divider"></li>
                   <li><a class="navLink" href="/#!/mykicks">MyKicks</a></li>
                 </ul>
-          </li>
-          <li><a class="menu" href="/#!/gallery">Photos</a></li>
-          <li class="dropdown">
-              <a class="menu dropdown-toggle" data-toggle="dropdown" href="">Resume</a>
-                <ul class="dropdown-menu">
-                  <li><a class="navLink" href="/#!/resume">Preview</a></li>
-                  <li><a class="navLink" href="../style/images/TaegyuLeemResume.pdf" download>Download</a></li>
-                </ul>
-                <li><span class="navbar-brand widget fadein">{{weather}}</span></li>
-                <!--<li><span class="navbar-brand fadein">{{theTime}}</span></li>-->
-        </ul>
-  </nav>
+            </li>
+            <li><a class="menu fadein" href="/#!/gallery">Photos</a></li>
+              <li class="dropdown">
+                <a class="menu dropdown-toggle fadein" data-toggle="dropdown" href="">Resume</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="navLink" href="/#!/resume">Preview</a></li>
+                    <li><a class="navLink" href="../style/images/TaegyuLeemResume.pdf" download>Download</a></li>
+                  </ul>
+              </li>
+              <li><a class="widget fadein">{{weather}}</a></li>
+          </ul>
+      </div>
+  
+</div>
+            <!--<li><span class="navbar-brand widget fadein">{{weather}}</span></li>-->
+            <!--<li><span class="navbar-brand fadein">{{theTime}}</span></li>-->
+
   <div ng-view></div>
   <script src="app.js"></script>
   <script src="./controllers/homeController.js"></script>
