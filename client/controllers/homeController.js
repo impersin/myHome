@@ -18,7 +18,7 @@ angular.module('myApp.home', [])
     $scope.profile = {
       firstName: 'Terry',
       lastName: 'Leem',
-      title: 'Full stack Javacript Developer',
+      title: 'Full stack Developer',
       email: 'taegyuleem@gmail.com',
       linkedIn: 'https://www.linkedin.com/in/impersin',
       github: 'https://github.com/impersin/',
