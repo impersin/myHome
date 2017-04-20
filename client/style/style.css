@@ -12,13 +12,13 @@
     /*font-size: 3em !important;*/
   }
 
-  .navbar{
+  .navbar,.dropdown-default,.menu{
     background-color: black !important;
   }
-  .menu {
-    color:white !important;
-  }
 
+  .dropdown-menu{
+    text-align: center !important;
+  }
 
   .jumbotron{
     height: 670px;
@@ -82,7 +82,7 @@
   }
 
   li > span{
-    color: white;
+    color: grey;
   }
   .widget{
     width: 350px;
@@ -91,7 +91,7 @@
     width:360px;
   }
 
-  .linkedin-link,.email {
+  .linkedin-link,.email,.caret {
     color:white;
   }
   a{
@@ -102,9 +102,10 @@
     color:grey !important;
     text-decoration:none !important;
   }
-  .navLink{
+
+  /*.navLink{
     color: black !important;
-  }
+  }*/
 
 
 /*------------------------------ home page end ----------------------*/
@@ -208,6 +209,7 @@ a.project-url{
   position: relative;
   top:-30px;
   font-size: 1em;
+  color:black !important;
 }
 
 /* resume */
