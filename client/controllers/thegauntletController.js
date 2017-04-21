@@ -1,5 +1,8 @@
 angular.module('myApp.thegauntlet', [])
-  .controller('thegauntletController', function($scope) {
+  .controller('thegauntletController', function($scope, $window) {
+    $scope.$on('$viewContentLoaded', function () {
+      $window.scrollTo(0, 0);
+    });  
     $scope.portfolio =
     {
       title: 'Thegauntlet',

@@ -1,5 +1,8 @@
 angular.module('myApp.myKicks', [])
-  .controller('myKicksController', function($scope) {
+  .controller('myKicksController', function($scope, $window) {
+    $scope.$on('$viewContentLoaded', function () {
+      $window.scrollTo(0, 0);
+    }); 
     $scope.portfolio =
     {
       title: 'MyKicks',

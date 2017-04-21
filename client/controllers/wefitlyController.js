@@ -1,5 +1,8 @@
 angular.module('myApp.wefitly', [])
-  .controller('wefitlyController', function($scope) {
+  .controller('wefitlyController', function($scope, $window) {
+    $scope.$on('$viewContentLoaded', function () {
+      $window.scrollTo(0, 0);
+    });  
     $scope.portfolio =
     {
       title: 'Wefit.ly',
