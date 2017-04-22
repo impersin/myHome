@@ -41,13 +41,17 @@
     </div>
   </div>
     <div class="container-fluid tech-wrapper">
-    <div class="row">
+    <div class="row row1">
       <div class="col-md-12 text-center">
         <h4 id="app-desc">{{portfolio.desc}}</h4>
-        <h1><img src="../style/images//core1.png" width="70px" height="70px">Technology</h1>
+      </div>
+      <div class="col-md-12 text-center">
+        <i class="glyphicon glyphicon-cog"></i><h1 id="system-header">System Design</h1>
+        <img src="{{portfolio.systemDesign}}" alt="" width="70%" height="70%">
       </div>
     </div>
     <div class="row text-center">
+        <h1><img src="../style/images//core1.png" width="70px" height="70px">Technology</h1>
       <div class="col-md-4 col-md-offset-2">
         <div id="tech-desc">
           <img id="tech-icon" src="../style/images/{{portfolio.path}}/{{portfolio.stack}}" alt="Tech image">
