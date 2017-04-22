@@ -1,16 +1,16 @@
   
-  <div class="jumbotron fadein temp text-center">
+  <div class="jumbotron fadein">
     <div class="row">
-      <div class="col-md-6 col-md-offset-2 greet">
+      <div class="col-md-6 col-md-offset-3 col-sm-offset-2 col-xs-offset-2 greet">
         <p id="name">{{profile.firstName}} {{profile.lastName}}</p>      
         <p id="job-title">{{profile.title}}</p>
           -만나서 반갑습니다-
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container-fluid main">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-offset-2">
           <div>
             <h2><a ng-click="aboutMeToggle()" href="">10 seconds about me</a></h2>
              <ul ng-repeat="list in profile.about" ng-show="aboutMe">
@@ -19,7 +19,7 @@
              <a id="bottom"></a>   
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4 col-md-offset-1 col-sm-offset-8 col-xs-offset-4">
           <h2><a ng-click="contactToggle()" href="">Contact</a></h2>
           <ul ng-show="contact">
             <li ng-click="gotoBottom()"><img id="email" src="../style/images/email.png" alt="" width="20px" height="20px"><a class="email" href="mailto:{{profile.email}}">Send email</a></li>
