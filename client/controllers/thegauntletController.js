@@ -11,6 +11,7 @@ angular.module('myApp.thegauntlet', [])
       path: 'thegauntlet',
       images: ['cover.png', 'img1.png', 'img2.png', 'img3.png', 'img4.png'],
       stack: 'stack.png',
+      systemDesign: 'https://s3-us-west-1.amazonaws.com/taegyudocs/system.png',
       info: [
         ['React + Redux', 'Enhanced complexity of data flow'],
         ['AWS S3', 'Large amounts of data securely and allow instantaneous access for user with AWS'],
