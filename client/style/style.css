@@ -83,7 +83,7 @@
   }
 
   li > span{
-    color: grey;
+    color: white;
   }
   .widget{
     width: 350px;
@@ -102,11 +102,6 @@
   a:hover {
     color:grey !important;
     text-decoration:none !important;
-  }
-  
-  .project-header{
-    /*text-align: center;
-    height: 320px;*/
   }
 
   #project-title {
@@ -139,6 +134,10 @@
       margin: auto;
   }
 
+#systemDesign{
+  margin-bottom:30px;
+}  
+
 h4#app-desc{
     margin-top:20px;
     margin-bottom:100px;
@@ -164,7 +163,6 @@ li > em{
 }
   
 a.project-url{
-
   color:black !important;
 }
 
