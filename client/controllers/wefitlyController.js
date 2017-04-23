@@ -11,6 +11,7 @@ angular.module('myApp.wefitly', [])
       path: 'wefitly',
       images: ['cover.png', 'img1.png', 'img2.png', 'img3.png', 'img4.png'],
       stack: 'stack.png',
+      systemDesign: 'https://s3-us-west-1.amazonaws.com/taegyudocs/system_wefitly.png',
       info: [
         ['React', ''],
         ['MongoDB', ''],
