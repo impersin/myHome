@@ -1,7 +1,7 @@
 const app = angular.module('myApp', [
   'ngRoute',
   'myApp.home',
-  'myApp.portfolio',
+  'myApp.resume',
   'myApp.thegauntlet',
   'myApp.wefitly',
   'myApp.myKicks',
@@ -70,7 +70,7 @@ app.config(($routeProvider) => {
   })
   .when('/resume', {
     templateUrl: 'views/resume.html',
-    controller: ''
+    controller: 'resumeController'
   })
   .otherwise({redirectTo: '/'});
 });
