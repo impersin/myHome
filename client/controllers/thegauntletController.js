@@ -9,7 +9,7 @@ angular.module('myApp.thegauntlet', [])
       url: 'https://playgauntlet.herokuapp.com',
       desc: 'Social media based web application that allows users to create custom competitions and vote on winner.',
       path: 'thegauntlet',
-      images: ['cover.png', 'img1.png', 'img2.png', 'img3.png', 'img4.png'],
+      images: ['https://s3-us-west-1.amazonaws.com/taegyudocs/thegauntlet/gauntlet-cover.png', 'https://s3-us-west-1.amazonaws.com/taegyudocs/thegauntlet/gauntlet-img1.png', 'https://s3-us-west-1.amazonaws.com/taegyudocs/thegauntlet/gauntlet-img2.png', 'https://s3-us-west-1.amazonaws.com/taegyudocs/thegauntlet/gauntlet-img3.png', 'img4.png'],
       stack: 'stack.png',
       systemDesign: 'https://s3-us-west-1.amazonaws.com/taegyudocs/system.png',
       info: [
