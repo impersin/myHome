@@ -25,7 +25,8 @@
     background-image: url("../style/images/jeju_bw.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100%;
+    background-color: black !important;
     margin-bottom: 0px !important;
   }
 
@@ -135,6 +136,7 @@
   }
 
 #systemDesign{
+  width:65%;
   margin-bottom:30px;
 }  
 
@@ -223,3 +225,34 @@ i{
 #download{
   font-size: 30px;
 }
+#header-name,#header-job-title{
+  font-size: 2em;
+  margin-top:30px;
+  text-align: center;
+  display: none;
+  color:white;
+}
+
+ @media(max-width:800px){
+        #name{
+          display: none;
+        }
+        #header-name{
+          display: block;
+        }
+        #job-title{
+          margin-top: 440px;
+          margin-left:120px;
+        }
+      }
+  @media(max-width:630px){
+        #job-title{
+          display: none;
+        }
+        #header-job-title{
+          display: block;
+        }
+        .main{
+          margin-top:-200px;
+        }
+      }    
